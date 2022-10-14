@@ -18,7 +18,7 @@ public class Primes extends GenerateNumbers<Integer>{
         for (int i = 0; i < _numbers.size(); i++) {
             if (isPrime(_numbers.get(i))) { // is prime number
                 primeList.add(i);
-                // System.out.println("added: " + i);
+                 System.out.println("added: " + i);
                 if (primeList.size() == numberOfPrimes) { // Task successful
                     System.out.println("Added all prime numbers to primeList successfully");
                     return primeList;
