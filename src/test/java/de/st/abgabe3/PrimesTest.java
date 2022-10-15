@@ -1,22 +1,33 @@
 package de.st.abgabe3;
 
-import org.junit.jupiter.api.function.Executable;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PrimesTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void generatePrimes() {
-        Primes p = new Primes();
-        assertThrows(RuntimeException.class, () ->  p.generatePrimes(-15));
-
-
     }
 
+    @Test
+    void catchPrimes() {
+    }
 
+    @Test
+    void isPrime() {
+    }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void generateNumbers() {
+    }
+
+    @Test
+    void expandList() {
+    }
+
+    @BeforeEach
+    void setUp() {
     }
 }
