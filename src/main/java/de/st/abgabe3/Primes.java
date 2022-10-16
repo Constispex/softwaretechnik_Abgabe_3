@@ -74,7 +74,7 @@ public class Primes extends GenerateNumbers<Integer>{
     @Override
     protected void expandList(int factor) {
         int newSize = _numbers.size() * factor;
-        setLastIndex(newSize);
+        setLastIndex(_numbers.size());
         generateNumbers(newSize * 2); // expands list
     }
 
