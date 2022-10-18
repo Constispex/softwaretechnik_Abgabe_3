@@ -19,7 +19,7 @@ public class Program {
         System.out.println(arg._filename);
 
         try{
-            BufferedWriter bwr = Files.newBufferedWriter(Path.of("src/" + arg._filename + ".txt"), StandardOpenOption.CREATE_NEW);
+            BufferedWriter bwr = Files.newBufferedWriter(Path.of("src/out/" + arg._filename + ".txt"), StandardOpenOption.CREATE_NEW);
             bwr.write(String.valueOf(p.generatePrimes(arg._number)));
             bwr.close();
         } catch (IOException e) {

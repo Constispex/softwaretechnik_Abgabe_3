@@ -20,7 +20,7 @@ public abstract class GenerateNumbers<T> {
 
     public void printList() {
         int count = 0;
-        for (T t: _numbers) {
+        for (T t : _numbers) {
             System.out.printf("Index: %s\t Content: %s %n",count, t);
             count++;
         }
