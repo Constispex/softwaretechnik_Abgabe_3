@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdd68ba9-7d1b-4b93-88b5-e2f52d2c0a2e" name="Changes" comment="Version 2.1 - Folderstructure">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/io/Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/io/ListWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/io/Output.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/st/app/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/st/app/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/io/InputChecks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/io/NumberOutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/io/ListWriter.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +139,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="V3-Alternative" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
