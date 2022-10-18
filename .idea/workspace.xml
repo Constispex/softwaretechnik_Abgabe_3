@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdd68ba9-7d1b-4b93-88b5-e2f52d2c0a2e" name="Changes" comment="Version 1 - it works, but cody mag es nicht">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/app/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/io/InputChecks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/io/NumberOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/io/ParameterCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/logic/NumberGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/abgabe3/GenerateNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/st/logic/GenerateNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/abgabe3/Primes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/st/logic/Primes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/abgabe3/PrimesOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/st/abgabe3/PrimesOld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/abgabe3/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/st/abgabe3/PrimesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/st/logic/PrimesTest.java" afterDir="false" />
+    <list default="true" id="bdd68ba9-7d1b-4b93-88b5-e2f52d2c0a2e" name="Changes" comment="Version 2.1 - Folderstructure">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/io/Arguments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/io/ListWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/st/io/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/app/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/st/app/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/io/InputChecks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/st/io/NumberOutput.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,10 +59,11 @@
       <recent name="de.st.abgabe3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.de.st.app.Program">
-    <configuration name="de.st.app.Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Program">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.st.app.Program" />
       <module name="softwaretechnik_Abgabe_3" />
+      <option name="PROGRAM_PARAMETERS" value="16 nDoc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="de.st.logic.*" />
@@ -94,12 +91,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.de.st.app.Program" />
+      <item itemvalue="Application.Program" />
       <item itemvalue="JUnit.PrimesTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.de.st.app.Program" />
+        <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.PrimesTest" />
       </list>
     </recent_temporary>
@@ -128,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665757376009</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Version 2.1 - Folderstructure">
+      <created>1666090557156</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666090557156</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +152,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Version 0 - shares Main Project with Partners" />
     <MESSAGE value="Version 1 - it works, but cody mag es nicht" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1 - it works, but cody mag es nicht" />
+    <MESSAGE value="Version 2.1 - Folderstructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.1 - Folderstructure" />
   </component>
 </project>
