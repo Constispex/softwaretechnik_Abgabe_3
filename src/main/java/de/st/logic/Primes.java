@@ -1,5 +1,4 @@
-package de.st.abgabe3;
-
+package de.st.logic;
 import java.util.List;
 
 public class Primes extends GenerateNumbers<Integer>{
@@ -19,7 +18,7 @@ public class Primes extends GenerateNumbers<Integer>{
      * @param numberOfPrimes how much prime numbers do you need?
      * @throws RuntimeException if numberOfPrimes is negative -> Method throws RuntimeException
      */
-    public void generatePrimes(int numberOfPrimes) throws RuntimeException{
+    public List<Integer> generatePrimes(int numberOfPrimes) throws RuntimeException{
         generateNumbers(numberOfPrimes);
 
         if (numberOfPrimes < 0) throw new RuntimeException("numberOfPrimes is negative");
@@ -28,6 +27,7 @@ public class Primes extends GenerateNumbers<Integer>{
             expandList(2);
         } while (catchPrimes(_numbers).size() < numberOfPrimes);
         _numbers = _numbers.subList(0, numberOfPrimes);
+        return _numbers;
     }
 
     /**

@@ -1,4 +1,4 @@
-package de.st.abgabe3;
+package de.st.logic;
 
 import java.util.ArrayList;
 import java.util.List;

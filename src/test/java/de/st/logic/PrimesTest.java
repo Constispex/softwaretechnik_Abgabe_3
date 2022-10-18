@@ -1,5 +1,4 @@
-package de.st.abgabe3;
-
+package de.st.logic;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

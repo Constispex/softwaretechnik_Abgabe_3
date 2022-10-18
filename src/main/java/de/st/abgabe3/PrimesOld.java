@@ -1,9 +1,11 @@
 package de.st.abgabe3;
 
+import de.st.logic.GenerateNumbers;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrimesOld extends GenerateNumbers<Integer>{
+public class PrimesOld extends GenerateNumbers<Integer> {
     List<Integer> primeList;
 
     public PrimesOld() {
