@@ -10,26 +10,10 @@ public class PrimeGenerator implements NumberGenerator<Integer> {
         //ArrayList<Integer> result = new ArrayList<>();
         int lengthToSieve = length * 177;
         //fill(result, lengthToSieve);
-        return primeSieve((int) Math.min(lengthToSieve, Integer.MAX_VALUE-1)).subList(0, length);
-    }
-    private List<Integer> fill(List<Integer> toFill, int amount){
-        if(toFill != null){
-            toFill.clear();
-            for(int i = 2; i < amount; i++){
-                toFill.add(i);
-            }
-        }
-        return toFill;
-    }
-    private void fillAndExpand(List<Integer> toExpand){
-        if(toExpand != null){
-            for(int i = (int) toExpand.get(toExpand.size()); i < Math.max(toExpand.size()*5/4, 5); i++){
-                toExpand.add(i);
-            }
-        }
+        return primeSieve(Math.min(lengthToSieve, Integer.MAX_VALUE-1)).subList(0, length);
     }
     private List<Integer> primeSieve(int amount){
-        boolean prime[] = new boolean[amount+1];
+        boolean[] prime = new boolean[amount+1];
         for(int i=0;i<=amount;i++)
             prime[i] = true;
 
