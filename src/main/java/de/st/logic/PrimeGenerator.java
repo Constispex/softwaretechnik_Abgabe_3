@@ -3,14 +3,27 @@ package de.st.logic;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * {@link NumberGenerator} for generating only prime Numbers.
+ */
 public class PrimeGenerator implements NumberGenerator<Integer> {
+    /**
+     * Generates a {@link List} of the first n prime numbers.
+     * This algorithm is using a sieve to determine the prime numbers so the biggest value for n is
+     * {@link Integer#MAX_VALUE} divided by 177.
+     * @param n amount of prime numbers that shall be in the list
+     * @return {@link List<Integer>} of the first n prime numbers
+     *
+     * @throws IllegalArgumentException if n < 1 or n > Integer.MAX_VALUE/178
+     */
     @Override
-    public List<Integer> generateNumbers(int length) {
-        if(length < 1) throw new IllegalArgumentException("The length argument must be at least 1.");
+    public List<Integer> generateNumbers(int n) {
+        if(n < 1) throw new IllegalArgumentException("n must be at least 1.");
+        if(n > Integer.MAX_VALUE/178) throw new IllegalArgumentException("n must be less than Integer.MAX_VALUE/178.");
         //ArrayList<Integer> result = new ArrayList<>();
-        int lengthToSieve = length * 177;
+        int lengthToSieve = n * 177;
         //fill(result, lengthToSieve);
-        return primeSieve(Math.min(lengthToSieve, Integer.MAX_VALUE-1)).subList(0, length);
+        return primeSieve(lengthToSieve).subList(0, n);
     }
     private List<Integer> primeSieve(int amount){
         boolean[] prime = new boolean[amount+1];

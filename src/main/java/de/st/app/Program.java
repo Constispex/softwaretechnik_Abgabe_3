@@ -9,11 +9,18 @@ import de.st.logic.NumberGenerator;
 import java.io.IOException;
 import java.nio.file.Path;
 
+/**
+ * Softwaretechnik Aufgabe 3
+ * @author Johannes Constantin Fritzsch m30113
+ * @author Cody Radom m30118
+ */
 public class Program {
-
     public static void main(String[] args) throws IOException {
         Arguments arg = Arguments.from(args);
         NumberGenerator<Integer> gP = new PrimeGenerator();
-        Output.printToFile(SimpleListStringifier.stringify(gP.generateNumbers(arg._number)), Path.of("src/out/" + arg._filename + ".txt"));
+        Output.printToFile(
+                SimpleListStringifier.stringify(gP.generateNumbers(arg._number)),
+                Path.of("src/out/" + arg._filename + ".txt")
+        );
     }
 }
